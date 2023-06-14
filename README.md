@@ -1,17 +1,23 @@
 # BussinessRulesForTimber
 Architecting an Optimized Oracle Database Solution and Generating Reports for an Ecommerce Platform
-[Business Rules for Timber.docx](https://github.com/romylomy/BussinessRulesForTimber/files/11749620/Business.Rules.for.Timber.docx)
+![page0001](https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4e0e7c5a-57b9-480d-a776-0199b495c3dc)
+![page0002](https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/e74b9606-887d-4c24-94a3-2f078d408dca)
 
 
-Conceputal Model
-[deliverable_1_conceptual_data_model_Timber.drawio (1).pdf](https://github.com/romylomy/BussinessRulesForTimber/files/11749623/deliverable_1_conceptual_data_model_Timber.drawio.1.pdf)
 
-Physical Model
-[BRT_physical_model.pdf](https://github.com/romylomy/BussinessRulesForTimber/files/11749642/BRT_physical_model.pdf)
+<h3>Conceputal Model</h3> 
 
-Reports
+<img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/9ca73282-2e27-48a4-a18d-a6df926fedb6">
 
-[Report_2_Output.txt](https://github.com/romylomy/BussinessRulesForTimber/files/11749659/Report_2_Output.txt)
+<h3>Physical Model</h3> 
+
+<img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/339b4e33-43fc-4028-8c23-54c40b8b1619">
+
+<h3>Reports</h3> 
+
+<img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4c8fcd0a-06a1-4b46-9078-9a88fdf831a1">
+               
+              
 
 The following steps are performed in the code:
 
