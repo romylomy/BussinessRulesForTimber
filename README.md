@@ -5,29 +5,35 @@ Architecting an Optimized Oracle Database Solution and Generating Reports for an
 
 
 
-<h3>Conceputal Model</h3> 
+<h2>Conceputal Model</h2> 
 
 <img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/9ca73282-2e27-48a4-a18d-a6df926fedb6">
 
-<h3>Physical Model</h3> 
+1. Identifying relationships between entities 
+
+<h2>Physical Model</h2> 
 
 <img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/339b4e33-43fc-4028-8c23-54c40b8b1619">
 
-<h3>Reports</h3> 
+1.Breaking all many-to-many relationships into normalized one-to-many relationships for improved data integrity and efficiency.
+<br> 
+2.determining Primary, Foreign Keys, attribues and attriute values, and constraints
+
+
+<h2>Reports</h2> 
 
 <img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4c8fcd0a-06a1-4b46-9078-9a88fdf831a1">
                
               
+<h3>The following steps are performed in the code:</h3> 
+<br>
+1.The display format settings are configured using <b>SET</b> commands, such as <b>LINESIZE</b>, <b>PAGESIZE</b>, and <b>COLUMN<b> formats.
+<br>
+2.A SQL query is executed to retrieve the required data from the tables.
+<br>
+3.The query calculates the average, minimum, and maximum prices for each category by joining the <b> BRT_CATEGORY </b> and <b> BRT_PRODUCT</b> tables and grouping the results by category.
 
-The following steps are performed in the code:
 
-The display format settings are configured using SET commands, such as LINESIZE, PAGESIZE, and COLUMN formats.
-A SQL query is executed to retrieve the required data from the tables.
-The query calculates the average, minimum, and maximum prices for each category by joining the BRT_CATEGORY and BRT_PRODUCT tables and grouping the results by category.
-The results are formatted using the specified column formats.
-The final report is displayed in the SQL command line interface.
-Output
-The executed code generates a dynamic report in the SQL command line interface. The report displays the category name, average price, minimum price, and maximum price for each category. The results are sorted by the average price in ascending order.
 
 
 
