@@ -15,9 +15,9 @@ Architecting an Optimized Oracle Database Solution and Generating Reports for an
 
 <img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/339b4e33-43fc-4028-8c23-54c40b8b1619">
 
-1.Breaking all many-to-many relationships into normalized one-to-many relationships for improved data integrity and efficiency.
+1. Breaking all many-to-many relationships into normalized one-to-many relationships by adding bridging table for improved data integrity and efficiency.
 <br> 
-2.determining Primary, Foreign Keys, attribues and attriute values, and constraints
+2. Determining Primary, Foreign Keys, attribues and attriute values, and constraints
 
 
 <h2>Reports</h2> 
@@ -25,13 +25,13 @@ Architecting an Optimized Oracle Database Solution and Generating Reports for an
 <img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4c8fcd0a-06a1-4b46-9078-9a88fdf831a1">
                
               
-<h3>The following steps are performed in the code:</h3> 
+<h4>The following steps are performed in the code:</h4> 
 <br>
-1.The display format settings are configured using <b>SET</b> commands, such as <b>LINESIZE</b>, <b>PAGESIZE</b>, and <b>COLUMN<b> formats.
+1. The display format settings are configured using <b>SET</b> commands, such as <b>LINESIZE</b>, <b>PAGESIZE</b>, and <b>COLUMN</b> formats.
 <br>
-2.A SQL query is executed to retrieve the required data from the tables.
+2. A SQL query is executed to retrieve the required data from the tables.
 <br>
-3.The query calculates the average, minimum, and maximum prices for each category by joining the <b> BRT_CATEGORY </b> and <b> BRT_PRODUCT</b> tables and grouping the results by category.
+3. The query calculates the average, minimum, and maximum prices for each category by joining the <b> BRT_CATEGORY </b> and <b> BRT_PRODUCT</b> tables and grouping the results by category.
 
 
 
