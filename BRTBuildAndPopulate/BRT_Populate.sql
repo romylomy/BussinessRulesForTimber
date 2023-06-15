@@ -47,6 +47,20 @@ INSERT INTO brt_suppliers
 VALUES(3333,'Modern Beauty', 'modernbeauty@example.com', 'Toronto','ON');
  
 
+--brt_Order-- (TO_DATE('2003/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+insert into BRT_Order (order_id, customer_id, order_date, Estimated_delivery_date, shipping_amount, Tax_amount, Shipping_province)
+values(1112, 8756, TO_DATE('2023/08/01', 'yyyy/mm/dd'), TO_DATE('2023/08/03', 'yyyy/mm/dd'), 9.95, 99.9, 'AB');
+
+INSERT INTO BRT_Order (order_id, customer_id, order_date, Estimated_delivery_date, shipping_amount, Tax_amount, Shipping_province)
+VALUES (1113, 8857, TO_DATE('2022/09/11', 'yyyy/mm/dd'), TO_DATE('2022/12/31', 'yyyy/mm/dd') , 9.95, 11.11, 'BC');
+
+INSERT INTO BRT_Order (order_id, customer_id, order_date, Estimated_delivery_date, shipping_amount, Tax_amount, Shipping_province)
+VALUES (1114, 8958, TO_DATE('2022/08/01', 'yyyy/mm/dd'), TO_DATE('2022/08/05', 'yyyy/mm/dd') , 0, 0.55, 'ON');
+
+INSERT INTO BRT_Order (order_id, customer_id, order_date, Estimated_delivery_date, shipping_amount, Tax_amount, Shipping_province)
+VALUES (1115, 8759, TO_DATE('2022/02/10', 'yyyy/mm/dd'), TO_DATE('2022/02/15', 'yyyy/mm/dd') , 9.95, 15.04, 'QC');
+
 
 
 spool OFF
