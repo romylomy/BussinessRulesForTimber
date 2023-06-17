@@ -1,5 +1,8 @@
 # BussinessRulesForTimber
 Architecting an Optimized Oracle Database Solution and Generating Reports for an Ecommerce Platform
+
+Created by Jerome Corpuz, Zeus Estrella, Sergio Valencia, Emmett Sparrow
+
 ![page0001](https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4e0e7c5a-57b9-480d-a776-0199b495c3dc)
 ![page0002](https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/e74b9606-887d-4c24-94a3-2f078d408dca)
 
