@@ -18,6 +18,8 @@ Created by Jerome Corpuz, Zeus Estrella, Sergio Valencia, Emmett Sparrow
 
 <img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/339b4e33-43fc-4028-8c23-54c40b8b1619">
 
+
+
 1. Breaking all many-to-many relationships into normalized one-to-many relationships by adding bridging table for improved data integrity and efficiency.
 
 2. Determining Primary, Foreign Keys, attribues and attriute values, and constraints
@@ -28,8 +30,7 @@ Created by Jerome Corpuz, Zeus Estrella, Sergio Valencia, Emmett Sparrow
 
 <h3>Report 1: <i>Customer report based on a specified city name</i></h3>
 
-<img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="readmephotos/report1.png">
-               
+<img width="862" alt="Screen Shot 2023-06-17 at 5 25 17 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/15a10b23-154e-4a7c-baf6-ff0b41e5da39">               
               
 <h4>The following steps are performed in the code:</h4> 
 
@@ -43,12 +44,9 @@ select customer_id, address, city, province, postal_code, phone_number, email_ad
 from brt_customer
 WHERE city = '&input';
 ```
-
 #### Code Analysis:
 
 A SQL query is executed to retrieve customer information from brt_customer table based on the user's input regarding the city where customers reside 
-
-<br>
 <br>
 <h3>Report 2: <i>Calculateing the average, minimum, and maximum prices for each category</i></h3>
 
@@ -58,9 +56,6 @@ A SQL query is executed to retrieve customer information from brt_customer table
 <h4>The following output are performed in the code:</h4> 
 
 ```sql
-set echo ON
-spool 'C:\cprg250s\BRTDB\Prototype_System\Report 2\Report_2_Output.txt'
-
 SET LINESIZE 100
 SET PAGESIZE 50
 
@@ -82,10 +77,7 @@ GROUP BY
     C.CATEGORY_NAME
 ORDER BY
     "Average Price";
-
-spool OFF
 ```
-
 #### Code Analysis:
 1. The display format settings are configured using <b>SET</b> commands, such as <b>LINESIZE</b>, <b>PAGESIZE</b>, and <b>COLUMN</b> formats.
 
