@@ -25,16 +25,74 @@ Created by Jerome Corpuz, Zeus Estrella, Sergio Valencia, Emmett Sparrow
 
 <h2>Reports</h2> 
 
-<img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4c8fcd0a-06a1-4b46-9078-9a88fdf831a1">
+
+<h3>Report 1: <i>Customer report based on a specified city name</i></h3>
+
+<img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="readmephotos/report1.png">
                
               
 <h4>The following steps are performed in the code:</h4> 
 
+```sql
+COLUMN ADDRESS FORMAT A30;
+COLUMN CITY FORMAT A20;
+
+accept cityInput char prompt 'Enter a City Name: ';
+
+select customer_id, address, city, province, postal_code, phone_number, email_address
+from brt_customer
+WHERE city = '&input';
+```
+
+#### Code Analysis:
+
+A SQL query is executed to retrieve customer information from brt_customer table based on the user's input regarding the city where customers reside 
+
+<br>
+<br>
+<h3>Report 2: <i>Calculateing the average, minimum, and maximum prices for each category</i></h3>
+
+<img width="510" alt="Screen Shot 2023-06-14 at 1 27 02 PM" src="https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4c8fcd0a-06a1-4b46-9078-9a88fdf831a1">
+               
+              
+<h4>The following output are performed in the code:</h4> 
+
+```sql
+set echo ON
+spool 'C:\cprg250s\BRTDB\Prototype_System\Report 2\Report_2_Output.txt'
+
+SET LINESIZE 100
+SET PAGESIZE 50
+
+COLUMN "category_name" FORMAT A30
+COLUMN "Average Price" FORMAT $9, 999.99
+COLUMN "Min Price" FORMAT $9, 999.99
+COLUMN "Max Price" FORMAT $9, 999.99
+
+SELECT
+    C.CATEGORY_NAME,
+    AVG(P.PRICE) AS "Average Price",
+    MIN(P.PRICE) AS "Min Price",
+    MAX(P.PRICE) AS "Max Price"
+FROM
+    BRT_CATEGORY C
+    JOIN BRT_PRODUCT P
+    ON C.CATEGORY_ID = P.CATEGORY_ID
+GROUP BY
+    C.CATEGORY_NAME
+ORDER BY
+    "Average Price";
+
+spool OFF
+```
+
+#### Code Analysis:
 1. The display format settings are configured using <b>SET</b> commands, such as <b>LINESIZE</b>, <b>PAGESIZE</b>, and <b>COLUMN</b> formats.
 
-2. A SQL query is executed to retrieve the required data from the tables.
+2. A SQL query is executed to retrieve the required attributes category name from BRT_Category table and its respective  prices from the brt_product table.
 
-3. The query calculates the average, minimum, and maximum prices for each category by joining the <b> BRT_CATEGORY </b> and <b> BRT_PRODUCT</b> tables and grouping the results by category.
+3. SQL aggregate functions <b>AVG</b>, <b>MIN</b>, <b>MAX</b> are used to find the average, minimum, and maximum prices for each category by joining the <b> BRT_CATEGORY </b> and <b> BRT_PRODUCT</b> tables and grouping the results by category.
+
 
 
 
