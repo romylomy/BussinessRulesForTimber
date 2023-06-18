@@ -1,7 +1,10 @@
 # BussinessRulesForTimber
-Programmers: Jerome Corpuz, Zeus Estrella, Sergio Valencia, Emmett Sparrow
+**Programmers: Jerome Corpuz, Zeus Estrella, Sergio Valencia, Emmett Sparrow**
 <br>
-Architecting an Optimized Oracle Database Solution and Generating Reports for an Ecommerce Platform
+<br> 
+Purpose:
+<br>
+Architecting an Optimized Oracle Database Solution and Generating Reports for an Ecommerce Platform bussiness requirements
 
 
 ![page0001](https://github.com/romylomy/BussinessRulesForTimber/assets/115190653/4e0e7c5a-57b9-480d-a776-0199b495c3dc)
